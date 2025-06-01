@@ -1,0 +1,31 @@
+.expand-animation {
+    animation: expand 0.3s ease-in-out forwards;
+}
+
+.collapse-animation {
+    animation: collapse 0.3s ease-in-out forwards;
+}
+
+@keyframes expand {
+    from {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes collapse {
+    from {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+}
